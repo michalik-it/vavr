@@ -81,8 +81,8 @@ public class UserController {
      */
     public void fetchUserNameAndHeightByIdAndLogItJava(int id) {
         List<Object> userNameAndHeight = userService.getUserNameAndHeightByIdJava(id);
-        log.info("User name:" + userNameAndHeight.get(0));
-        log.info("User height:" + userNameAndHeight.get(1));
+        log.info("User name:" + (String)userNameAndHeight.get(0));
+        log.info("User height:" + (String)userNameAndHeight.get(1));
     }
 
     public void fetchUserNameAndHeightByIdAndLogItVavr(int id) {

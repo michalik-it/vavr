@@ -11,14 +11,14 @@ public class LazyExample {
     private static Logger logger = Logger.getLogger(LazyExample.class);
 
     public static void main(String[] args) {
-        Lazy<Double> lazy = Lazy.of(Math::random);
-        logger.info(lazy.isEvaluated());
-        logger.info(lazy.get());
-        logger.info(lazy.isEvaluated());
-        logger.info(lazy.get());
+        //lazyExample();
 
 
         //only interface
+        lazyOnlyInterfaceExample();
+    }
+
+    private static void lazyOnlyInterfaceExample() {
         CharSequence chars = Lazy.val(() -> {
             System.out.println("calculated");
             return "Yay! ";
@@ -29,5 +29,13 @@ public class LazyExample {
         logger.info(chars);
         logger.info(chars);
         logger.info(chars);
+    }
+
+    private static void lazyExample() {
+        Lazy<Double> lazy = Lazy.of(Math::random);
+        logger.info(lazy.isEvaluated());
+        logger.info(lazy.get());
+        logger.info(lazy.isEvaluated());
+        logger.info(lazy.get());
     }
 }

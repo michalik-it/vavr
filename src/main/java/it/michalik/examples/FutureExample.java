@@ -16,9 +16,9 @@ public class FutureExample {
     private static Logger logger = Logger.getLogger(FutureExample.class);
 
     public static void main(String[] args) {
-        someComputationBlockingConsumer();
-//        someComputationThatFailsBlockingConsumer();
+//        someComputationBlockingConsumer();
 //        someComputationNonBlockingConsumer();
+//        someComputationThatFailsBlockingConsumer();
 //        someComputationThatFailsNonBlockingConsumer();
     }
 

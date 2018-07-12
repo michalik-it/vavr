@@ -9,6 +9,9 @@ import static io.vavr.Predicates.isNull;
 /**
  * Pattern Matching
  *
+ * Pattern matching is a feature that is not natively available in Java. One could think of it as the advanced form of a switch-case statement.
+ *
+ * The advantage of Vavr’s pattern matching is that it saves us from writing stacks of switch cases or if-then-else statements. It, therefore, reduces the amount of code and represents conditional logic in a human-readable way
  */
 public class PatternMatchingExample {
 
