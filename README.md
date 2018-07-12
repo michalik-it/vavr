@@ -4,4 +4,4 @@ vavr.io use cases - Vavr library, formerly known as Javaslang, is a functional l
 
 **Lazy, Either, Future, Validation, Pattern Matching** is in _it.michalik.examples_
 
-**Collections**
+**Collections** it.michalik.examples.CollectionsExample
